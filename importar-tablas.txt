@@ -1,0 +1,4 @@
+crear una base de datos nueva en xampp con el nombre "repobuap" 
+con el cotejamiento utf8mb4_general_ci
+
+importar las tablas del archivo "repobuap" contenido en la carpeta principal
