@@ -13,7 +13,7 @@ if(!empty($_POST)){
 	$foldername = $_POST["foldername"];
 	$is_public = isset($_POST["is_public"])?1:0;
 
-	$sql = "update file set filename=\"$foldername\", is_public=\"$is_public\" where id=$id";
+	$sql = "update file set filename=\"$foldername\", is_public=\"$is_public\" where id=$id and is_folder=1";
 
 	$update=mysqli_query($con, $sql);
 	if ($update) {
