@@ -18,14 +18,15 @@ if(!empty($_POST)){
 	$update=mysqli_query($con, $sql);
 	if ($update) {
 		// echo "actualizado con exito";
-		header("location: ../editfile.php?id=".$code."&success");
+		header("location: ../editfile.php?id=".$code."&success1");
 	} else {
 		// echo "hubo un error al actualizar los datos";
-		header("location: ../editfile.php?id=".$code."&error");
+		header("location: ../editfile.php?id=".$code."&error1");
 	}
 	
 
 }
+
 
 
 ?>

@@ -59,6 +59,25 @@ while ($rows=mysqli_fetch_array($file)) {
                                 <button type="submit" class="btn btn-success">Actualizar Archivo</button>
                             </div>
                         </form>
+                        
+                    </div><!-- /.box -->
+                </div>
+            </div><!-- /.row -->
+        </section>
+                                <!--ACTUALIZACION DE NOMBRE DE CARPETA -->
+          <section class="content"><!-- Main content -->
+            <div class="row"><!-- Small boxes (Stat box) -->
+                <div class="col-md-6 col-md-offset-3">
+                    <?php
+                        // get messages
+                        if (isset($_GET['success1'])) {
+                            echo "<p class='alert alert-success'> <i class=' fa fa-exclamation-circle'></i> <strong>¡Bien hecho! </strong> Carpeta actualizada correctamente.</p>";
+                        }elseif(isset($_GET['error1'])) {
+                             echo "<p class='alert alert-danger'> <i class=' fa fa-exclamation-circle'></i> <strong>¡Error! </strong>No se pudo actualizar la Carpeta.</p>";
+                        }
+                    ?>
+                    <div class="box box-primary"><!-- general form elements -->
+                       
                         <!--ACTUALIZACION DE NOMBRE DE CARPETA -->
                         <form action="action/editnamefolder.php" method="post" role="form"><!-- form start -->
                             <div class="box-body">
@@ -83,6 +102,7 @@ while ($rows=mysqli_fetch_array($file)) {
                 </div>
             </div><!-- /.row -->
         </section>
+        <!--FIN ACTUALIZACION DE NOMBRE DE CARPETA -->
     </div><!-- /.content -->
 
 
